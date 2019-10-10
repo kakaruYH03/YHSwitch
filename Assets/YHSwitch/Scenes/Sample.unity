@@ -555,7 +555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
+  m_Color: {r: 1, g: 0.7122642, b: 0.7122642, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -592,7 +592,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 0
-  moveDuration: 3
+  moveDuration: 0.25
+  handleColor: {r: 1, g: 1, b: 1, a: 1}
+  offBackgroundColor: {r: 0, g: 0, b: 1, a: 1}
+  onBackgroundColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &2034893030
 MonoBehaviour:
   m_ObjectHideFlags: 0
