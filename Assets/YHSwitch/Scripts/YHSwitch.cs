@@ -16,6 +16,9 @@ public class YHSwitch : MonoBehaviour
     Image backgroundImage;              // 스위치 배경 이미지
     RectTransform handleRectTransform;  // 스위치 핸들 RectTransform
 
+    // Coroutine
+    Coroutine moveHandleCoroutine;      //핸들 이동 코루틴
+
     void Start()
     {
         // 핸들 초기화 작업
@@ -37,8 +40,11 @@ public class YHSwitch : MonoBehaviour
 
         float ratio = Mathf.Abs(distance.x) / totalHandleMoveLength;
         float duration = moveDuration * ratio;
-
-        StartCoroutine(MoveHandle(fromPosition,toPosition,duration));
+        if (moveHandleCoroutine != null)
+        {
+            StopCoroutine(moveHandleCoroutine);
+        }
+        moveHandleCoroutine = StartCoroutine(MoveHandle(fromPosition,toPosition,duration));
     }
     /// <summary>
     /// 핸들을 이동하는 함수
