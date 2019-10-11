@@ -1,5 +1,4 @@
 # YHSwitch
-<hr/>
 
 <br/>
 
