@@ -1,6 +1,6 @@
 # YHSwitch
-<br>
-
+<hr/>
+<br/>
 #### uGUI를 이용한 Switch
 <br/>
 유니티에서 사용할수있는 스위치
