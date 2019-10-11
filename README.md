@@ -1,5 +1,5 @@
 # YHSwitch
-#####uGUI를 이용한 Switch
+###### uGUI를 이용한 Switch
 유니티에서 사용할수있는 스위치
 
 1. 스위치 색상변경
